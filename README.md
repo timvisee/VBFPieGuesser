@@ -31,7 +31,9 @@ Web application that allows users to guess the weight of a cake, for a chance to
 
 *Note: This application has been created in a limited time span.
 Some features, such as a management page to prevent new guess submissions, aren't included yet.
-Some features would benefit from additional optimizations and security improvements too.*
+Various parts would also benefit from further optimizations and security improvements.*
 
 ## About
-Proudly created by [Tim Visée (timvisee.com)](https://timvisee.com/).
+Proudly created by [Tim Visée (timvisee.com)](https://timvisee.com/), free of charge.
+
+Based off an earlier version: [MohicanenPieGuesser](https://github.com/timvisee/MohicanenPieGuesser)
