@@ -71,7 +71,7 @@ var GUESSES_REFRESH_TIMEOUT_DISCONNECTED = 1000 * 5;
 
 
 
-// Page dependend scripts
+// Page dependant scripts
 $(document).on("pageshow", function() {
     // Get the active page ID
     var pageId = getActivePageId();
@@ -85,7 +85,10 @@ $(document).on("pageshow", function() {
     // Only run the following scripts on the specified pages
     if(pageId == 'page-guess-send' || pageId == 'page-preview' || pageId == 'page-screen') {
         // Create a new pusher instance
-        var pusher = new Pusher('1ae3f01040df0206bf68', { authEndpoint: 'pusher/auth/auth.php' });
+        var pusher = new Pusher('bb2f8a84cb9b7c2d1b16', {
+            authEndpoint: 'pusher/auth/auth.php',
+            cluster: 'eu'
+        });
 
         // Get the connection state object and the popup
         var connectionIndicator = $('#connection-indicator');
@@ -402,7 +405,8 @@ $(document).on("pageshow", function() {
                 channel.trigger('client-newGuess', {
                     weight: weight,
                     firstName: firstName,
-                    lastName: lastName});
+                    lastName: lastName
+                });
             }
 
             // Execute the make guess method when the make guess button is pressed
