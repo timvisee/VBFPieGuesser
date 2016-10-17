@@ -450,3 +450,12 @@ input.ui-btn.ui-btn-active {
     background-color: #acabaa;
     //box-shadow: 0 0 6px #b9b8b7;
 }
+
+// Range slider input field size fix for big numbers
+input[type=number] {
+    width: 60px;
+}
+
+.ui-slider-track {
+    margin-left: 100px;
+}
