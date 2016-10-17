@@ -1,4 +1,6 @@
 # VBF Pie Guesser
+###### Version: 0.1 (Prototype)
+
 Web application that allows users to guess the weight of a cake, for a chance to win it.
 
 *Note: This version is specifically created for [VBF](http://vbfrijswijk.nl/) and uses Dutch as user interface language.*
@@ -36,4 +38,4 @@ Various parts would also benefit from further optimizations and security improve
 ## About
 Proudly created by [Tim Visée (timvisee.com)](https://timvisee.com/), free of charge.
 
-Based off an earlier version: [MohicanenPieGuesser](https://github.com/timvisee/MohicanenPieGuesser)
+Based on an earlier prototype: [MohicanenPieGuesser](https://github.com/timvisee/MohicanenPieGuesser)
