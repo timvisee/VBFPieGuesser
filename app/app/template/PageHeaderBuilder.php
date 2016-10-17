@@ -10,7 +10,7 @@ defined('APP_INIT') or die('Access denied!');
 class PageHeaderBuilder {
 
     /** The default header title. */
-    const HEADER_TITLE_DEFAULT = 'Vakantie Bijbel Feest';
+    const HEADER_TITLE_DEFAULT = 'VakantieBijbelFeest';
 
     /** @var string|null The title of the header, or null to use the default title. */
     private $title = null;

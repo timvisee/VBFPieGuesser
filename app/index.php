@@ -18,7 +18,7 @@ require_once('top.php');
 
         <div data-role="main" class="ui-content" align="center">
             <p>
-                Welkom bij het Vakantie Bijbel Feest van 2016.<br />
+                Welkom bij het VakantieBijbelFeest van 2016.<br />
                 <br />
                 Weet jij hoe zwaar deze taart is?<br />
                 Stuur jouw schatting in en maak kans op het winnen van deze taart.
