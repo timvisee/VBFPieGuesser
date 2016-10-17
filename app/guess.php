@@ -35,8 +35,6 @@ if($guessStep == 1):
             <div data-role="main" class="ui-content">
                 <p>
                     Vul hier onder uw voor- en achternaam in om mee te doen met het raden van het gewicht van de taart.<br />
-                    <br />
-                    <i><?=__('general', 'note'); ?>: Om mee te kunnen doen moet je je echte naam invullen.</i>
                 </p><br />
 
                 <form method="GET" action="guess.php?guess_step=2">
@@ -100,7 +98,7 @@ elseif($guessStep == 2):
 
             <p>Vul hier onder jouw E-mail adres in zodat we contact met je op kunnen nemen als je de gelukkige winnaar bent. Je E-mail adres is niet zichtbaar voor andere spelers.<br />
                 <br />
-                <i><?=__('general', 'note'); ?>: Ouders mogen hun E-mail adres ook gebruiken voor hun kinderen als zij geen eigen mailbox hebben.</i></p><br />
+                <i><?=__('general', 'note'); ?>: Als kinderen geen eigen mailbox hebben mag het E-mail adres van ouders gebruikt worden.</i></p><br />
 
             <form method="GET" action="guess.php?guess_step=3">
                 <input type="hidden" name="guess_first_name" value="<?=$firstName; ?>" />
@@ -144,7 +142,7 @@ elseif($guessStep == 3):
                 <input type="hidden" name="guess_mail" value="<?=$mail; ?>" />
 
                 <div data-role="main" class="ui-content" align="center">
-                    <img src="<?=$site_root; ?>style/image/cake/cake.png" style="max-height: 220px; max-width: 100%;" />
+                    <img src="<?=$site_root; ?>style/image/cake.jpg" style="max-height: 220px; max-width: 100%;" />
                 </div>
                 <br />
 

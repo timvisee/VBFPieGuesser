@@ -10,7 +10,7 @@ require_once('top.php');
     <div data-role="page" id="page-screen" data-theme="b">
         <?php
         // Construct the builder
-        PageHeaderBuilder::create('Mohicanen NJO&nbsp;&nbsp;&middot;&nbsp;&nbsp;Hoe zwaar is de taart?')->build(true);
+        PageHeaderBuilder::create('Vakantie Bijbel Feest&nbsp;&nbsp;&middot;&nbsp;&nbsp;Hoe zwaar is de taart?')->build(true);
         ?>
         <div data-role="main" class="ui-content">
 
@@ -19,7 +19,7 @@ require_once('top.php');
             <fieldset class="ui-grid-a">
                 <div class="ui-block-a" style="width: 60%;">
                     <div data-role="main" class="ui-content" align="center">
-                        <img src="<?=$site_root; ?>style/image/cake/cake.png" style="height: 210px;" />
+                        <img src="<?=$site_root; ?>style/image/cake.jpg" style="height: 210px;" />
                     </div>
                 </div>
                 <div class="ui-block-b" style="width: 40%;">

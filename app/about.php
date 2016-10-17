@@ -13,11 +13,10 @@ require_once('top.php');
 
     <div data-role="main" class="ui-content" align="center">
         <br />
-        <img src="style/image/logo/logo_original.png" style="height: 120px;" />
-        <br />
-        <br />
-
-        <p><b>Version <?=APP_VERSION_NAME; ?> <sup>(<?=APP_VERSION_CODE; ?>)</sup></b></p>
+        <p>
+            <b>Pie Guesser</b><br />
+            <small>Version <?=APP_VERSION_NAME; ?> <sup>(<?=APP_VERSION_CODE; ?>)</sup></small>
+        </p>
         <br />
         <br />
         <p><?=__('pageAbout', 'developer'); ?></p>

@@ -13,14 +13,12 @@ require_once('top.php');
     <div data-role="main" class="ui-content">
 
         <div data-role="main" class="ui-content" align="center">
-            <img src="<?=$site_root; ?>style/image/cake/cake.png" style="max-height: 220px; max-width: 100%;" />
+            <img src="<?=$site_root; ?>style/image/cake.jpg" style="max-height: 220px; max-width: 100%;" />
         </div>
 
         <div data-role="main" class="ui-content" align="center">
             <p>
-                <b>Noot: </b>Deze actie is inmiddels verlopen.<br />
-                <br />
-                Welkom bij de Mohicanen NJO van 2016.<br />
+                Welkom bij het Vakantie Bijbel Feest van 2016.<br />
                 <br />
                 Weet jij hoe zwaar deze taart is?<br />
                 Stuur jouw schatting in en maak kans op het winnen van deze taart.

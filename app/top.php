@@ -70,7 +70,7 @@ $site_root = Config::getValue('general', 'site_url', '');
     <script src="<?=$site_root; ?>lib/jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
 
     <!-- Library: Pusher -->
-    <script src="//js.pusher.com/3.0/pusher.min.js"></script>
+    <script src="//js.pusher.com/3.2/pusher.min.js"></script>
 
     <!-- Library: Highcharts -->
     <script src="//code.highcharts.com/highcharts.js"></script>

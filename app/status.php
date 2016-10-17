@@ -26,7 +26,7 @@ require_once('top.php');
             </tr>
             <tr>
                 <td>Sessie</td>
-                <td><?=getSessionKey(); ?></td>
+                <td><pre><?=getSessionKey(); ?></pre></td>
             </tr>
             <tr>
                 <td><?=__('pageStatus', 'uptime'); ?></td>
