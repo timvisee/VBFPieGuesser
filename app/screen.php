@@ -7,7 +7,7 @@ use app\template\PageHeaderBuilder;
 require_once('top.php');
 
 ?>
-    <div data-role="page" id="page-screen" data-theme="b">
+    <div data-role="page" id="page-screen">
         <?php
         // Construct the builder
         PageHeaderBuilder::create('Vakantie Bijbel Feest&nbsp;&nbsp;&middot;&nbsp;&nbsp;Hoe zwaar is de taart?')->build(true);

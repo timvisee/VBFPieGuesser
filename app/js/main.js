@@ -499,18 +499,18 @@ $(document).on("pageshow", function() {
             };
 
             // Modify the chart to properly appear if shown on the big screen
-            if(pageId == 'page-screen') {
-                chartOptions.chart.backgroundColor = '#000459';
-                chartOptions.xAxis.labels.style.fontSize = '19.2px';
-                chartOptions.xAxis.labels.style.color = '#C1CFDA';
-                chartOptions.xAxis.tickPixelInterval = 200;
-                chartOptions.yAxis.labels.style.fontSize = '19.2px';
-                chartOptions.yAxis.labels.style.color = '#C1CFDA';
-                chartOptions.yAxis.title.style.fontSize = '19.2px';
-                chartOptions.yAxis.title.style.color = '#C1CFDA';
-                chartOptions.yAxis.gridLineColor = '#474D51';
-                chartOptions.colors = ['#0085DD'];
-            }
+            // if(pageId == 'page-screen') {
+            //     chartOptions.chart.backgroundColor = '#000459';
+            //     chartOptions.xAxis.labels.style.fontSize = '19.2px';
+            //     chartOptions.xAxis.labels.style.color = '#C1CFDA';
+            //     chartOptions.xAxis.tickPixelInterval = 200;
+            //     chartOptions.yAxis.labels.style.fontSize = '19.2px';
+            //     chartOptions.yAxis.labels.style.color = '#C1CFDA';
+            //     chartOptions.yAxis.title.style.fontSize = '19.2px';
+            //     chartOptions.yAxis.title.style.color = '#C1CFDA';
+            //     chartOptions.yAxis.gridLineColor = '#474D51';
+            //     chartOptions.colors = ['#0085DD'];
+            // }
 
             // Create a new chart
             var chart = new Highcharts.Chart(chartOptions);
