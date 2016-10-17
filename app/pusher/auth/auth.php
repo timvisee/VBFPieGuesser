@@ -12,9 +12,15 @@ require_once('../../lib/pusher/Pusher.php');
 $authKey = Config::getValue('pusher', 'auth_key', '');
 $secret = Config::getValue('pusher', 'secret', '');
 $appId = Config::getValue('pusher', 'app_id', '0');
+$cluster = Config::getValue('pusher', 'cluster', '');
+
+// Create an options object, to define the cluster
+$pusherOptions = Array(
+    'cluster' => $cluster
+);
 
 // Create a pusher instance with the proper key, secret and application ID
-$pusher = new Pusher($authKey, $secret, $appId);
+$pusher = new Pusher($authKey, $secret, $appId, $cluster);
 
 // Authenticate the request
 echo $pusher->socket_auth($_POST['channel_name'], $_POST['socket_id']);

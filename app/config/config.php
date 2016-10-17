@@ -38,6 +38,7 @@ return Array(
     'pusher' => Array(
         'auth_key' => '',
         'secret' => '',
-        'app_id' => ''
+        'app_id' => '',
+        'cluster' => 'eu'
     )
 );
