@@ -16,7 +16,7 @@ $site_root = Config::getValue('general', 'site_url', '');
 <head>
 
     <!-- Title -->
-    <title>Hoe zwaar is de taart? &middot; Mohicanen NJO 2016</title>
+    <title>Hoe zwaar is de taart? &middot; VBF 2016</title>
 
     <!-- Meta -->
     <meta charset="UTF-8">
