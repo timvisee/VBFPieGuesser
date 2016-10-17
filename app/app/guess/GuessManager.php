@@ -81,6 +81,38 @@ class GuessManager {
     }
 
     /**
+     * Get a list of all guesses sorted from best to worst
+     * Note: This method is very resource intensive and expensive to execute.
+     *
+     * @param int $weight Weight of the pie.
+     *
+     * @return array All guesses.
+     *
+     * @throws Exception Throws an exception on failure.
+     */
+    public static function getBestGuesses($weight) {
+        // Build a query to select the guesses
+        $query = 'SELECT guess_id FROM ' . static::getDatabaseTableName() . ' ORDER BY abs(guess_weight - ' . $weight . ')';
+
+        // Execute the query
+        $statement = Database::getPDO()->query($query);
+
+        // Make sure the query succeed
+        if($statement === false)
+            throw new Exception('Failed to query the database.');
+
+        // The list of guesses
+        $guesses = Array();
+
+        // Return the number of rows
+        foreach($statement->fetchAll(PDO::FETCH_ASSOC) as $data)
+            $guesses[] = new Guess($data['guess_id']);
+
+        // Return the list of guesses
+        return $guesses;
+    }
+
+    /**
      * Get the number of guesses.
      *
      * @return int Number of guesses.
@@ -97,6 +129,15 @@ class GuessManager {
 
         // Return the number of rows
         return $statement->rowCount();
+    }
+
+    /**
+     * Check whether any guesses are made yet.
+     *
+     * @return bool True if any guesses are made.
+     */
+    public static function hasGuesses() {
+        return GuessManager::getGuessCount() > 0;
     }
 
     /**
