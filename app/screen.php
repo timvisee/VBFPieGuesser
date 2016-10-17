@@ -24,7 +24,7 @@ require_once('top.php');
                 </div>
                 <div class="ui-block-b" style="width: 40%;">
                     <div data-role="main" class="ui-content" align="center">
-                        <img src="<?=$site_root; ?>style/image/logo/logo_original.png" style="height: 210px;" />
+                        <img src="<?=$site_root; ?>style/image/logo/logo.png" style="height: 210px;" />
                     </div>
                 </div>
             </fieldset>
