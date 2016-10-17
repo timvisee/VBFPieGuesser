@@ -20,7 +20,7 @@ $pusherOptions = Array(
 );
 
 // Create a pusher instance with the proper key, secret and application ID
-$pusher = new Pusher($authKey, $secret, $appId, $cluster);
+$pusher = new Pusher($authKey, $secret, $appId, $pusherOptions);
 
 // Authenticate the request
 echo $pusher->socket_auth($_POST['channel_name'], $_POST['socket_id']);
