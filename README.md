@@ -7,13 +7,13 @@ Web application that allows users to guess the weight of a cake, for a chance to
 
 #### Features
 - Easy to use interface.
+- Everything (graphs, lists) is updated in real-time when new guesses are made.
 - Personal page for each user.
 - Ability to view/manage personal guesses.
 - Ability to use a single device for multiple users/guesses.
 - User's guesses are managed without any kind of registration.
 - Guesses are graphed to make a clear overview.
-- Global overview screen with a graph and the most recent guesses to show using a beamer.
-- Graphs and result pages are updated in real-time.
+- Global overview screen with a graph and the most recent guesses to show on a big screen.
 - Tool to easily determine a winner.
 
 ## Screenshots
