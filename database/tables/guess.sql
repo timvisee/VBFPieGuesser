@@ -10,7 +10,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table mohicanenpieguesser.mpg_guess
+-- Dumping structure for table vbfpieguesser.mpg_guess
 CREATE TABLE IF NOT EXISTS `mpg_guess` (
   `guess_id` int(11) NOT NULL AUTO_INCREMENT,
   `guess_session_id` varchar(255) NOT NULL,
