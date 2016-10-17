@@ -34,7 +34,11 @@ if($guessStep == 1):
 
             <div data-role="main" class="ui-content">
                 <p>
-                    Vul hier onder uw voor- en achternaam in om mee te doen met het raden van het gewicht van de taart.<br />
+                    Iedereen mag slechts één keer mee doen met het raden van het gewicht van de taart.<br>
+                    <br>
+                    De gelukkige winnaar krijgt aan het einde van het feest de taart mee naar huis.<br>
+                    <br>
+                    Vul hier onder uw voor- en achternaam in om mee te doen.<br />
                 </p><br />
 
                 <form method="GET" action="guess.php?guess_step=2">
