@@ -346,6 +346,17 @@ class GuessManager {
         // Get the guess IP
         $ip = IpUtils::getClientIp();
 
+        // Format the first name
+        $firstName = trim($firstName);
+        $firstName = strtoupper(substr($firstName, 0, 1)) . strtolower(substr($firstName, 1));
+
+        // Get the character position for the space in the last name
+        $lastName = trim($lastName);
+        $charPos = strpos($lastName, ' ') + 1;
+        if($charPos === false)
+            $charPos = 0;
+        $lastName = strtolower(substr($lastName, 0, $charPos)) . strtoupper(substr($lastName, $charPos, 1)) . strtolower(substr($lastName, $charPos + 1));
+
         // Prepare a query for the picture being added
         $statement = Database::getPDO()->prepare('INSERT INTO ' . static::getDatabaseTableName() .
             ' (guess_session_id, guess_first_name, guess_last_name, guess_mail, guess_weight, guess_datetime, guess_ip) ' .
